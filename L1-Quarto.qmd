@@ -4,46 +4,93 @@ author: "GL"
 date: today
 format: 
   html:
-    self-contained: true   
+    self-contained: true
     toc: true
-    toc-title: My contents
     toc-location: left
+    toc-title: My contents
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
     theme: 
       light: minty
       dark: superhero
     fontsize: 20px
 lang: en
 bibliography: references.bib
+citation-location: margin
 ---
 
 # My first Quarto Project
 
-## First Section
-This is the **first section**.
+## PhD life
+Life as PhD can be **hard**.
+Especially if you need to be fluent in programming languages, which I'm not.
+`Therefore, this would be a code, if I would have any...`
+Luckily, there is a whole community who can help you. Just have a look [here](https://stackoverflow.com/questions)
 
-`this would be a code, if I would have any`
+![Then you can attend nice summerschool and learn how to use these programs](img/rq.png)
+
+:::{.column-margin}
+In the meantime ChatGPT is the best in generating picture for babies with nice nirs caps :)
 
 
-But please, you can find whatever code [here](https://stackoverflow.com/questions)
+![](img/bb.png)
+:::
 
-![Nice to use Quarto](img/rq.png)
-[@gervain2008neonate]
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+## Main Body
 
-## Running Code
+During PhD life, you would realize how much you're supervisor published while doing her PhD [@gervain2008neonate; @gervain2008bootstrapping; @gervain2008infant]. And you cannot compete... Hehehe
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+::: {.callout-caution}
+## Pay attention!
+Don't worry, you will survive anyway!
+:::
+::: {.callout-tip}
+## How?
 
-```{r}
-1 + 1
-```
+By making friends and connections!
 
-You can add options to executable code like this 
+:::
 
-```{r}
-#| echo: false
-2 * 2
-```
+![](img/aperol.jpg)
 
-The `echo: false` option disables the printing of code (only output is displayed).
+::: {.grid}
+
+::: {.g-col-4}
+
+:::
+
+::: {.g-col-8}
+
+## Cheers!
+
+:::
+
+:::
+
+## Collection of pictures used
+::: {.grid}
+
+::: {.g-col-2}
+
+![](img/rq.png)
+
+:::
+
+::: {.g-col-4}
+
+![](img/bb.png)
+
+:::
+
+::: {.g-col-6}
+
+![](img/aperol.jpg)
+
+:::
+
+:::
+
