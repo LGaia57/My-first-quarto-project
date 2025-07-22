@@ -13,6 +13,7 @@ format:
       dark: superhero
     fontsize: 20px
 lang: en
+bibliography: references.bib
 ---
 
 # My first Quarto Project
@@ -26,6 +27,7 @@ This is the **first section**.
 But please, you can find whatever code [here](https://stackoverflow.com/questions)
 
 ![Nice to use Quarto](img/rq.png)
+[@gervain2008neonate]
 
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
 
