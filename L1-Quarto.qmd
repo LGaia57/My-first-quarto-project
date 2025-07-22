@@ -14,12 +14,22 @@ format:
       margin-width: 300px
       gutter-width: 1.5rem
     theme: 
-      light: minty
-      dark: superhero
+      light: lumen
+      dark: quartz
     fontsize: 20px
+    code-tools: 
+     source: true
+     toggle: false
+     caption: This is my code
 lang: en
 bibliography: references.bib
 citation-location: margin
+execute: 
+  echo: fenced
+  message: false
+  error: true
+code-fold: true
+code-summary: See this specific code
 ---
 
 # My first Quarto Project
@@ -93,4 +103,30 @@ By making friends and connections!
 :::
 
 :::
+
+## Let's talk about rocks
+
+```{r}
+#| echo: fenced
+#| eval: false
+print(rock)
+```
+
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: Look at me!
+summary(rock)
+```
+
+## And now about anxiety and other stuff
+```{r}
+data <- read.csv("data/dataset.csv")
+str(data)
+
+
+
+summary(data)
+```
 
