@@ -36,8 +36,11 @@ code-summary: See this specific code
 
 ## PhD life
 Life as PhD can be **hard**.
+
 Especially if you need to be fluent in programming languages, which I'm not.
+
 `Therefore, this would be a code, if I would have any...`
+
 Luckily, there is a whole community who can help you. Just have a look [here](https://stackoverflow.com/questions)
 
 ![Then you can attend nice summerschool and learn how to use these programs](img/rq.png)
@@ -103,30 +106,3 @@ By making friends and connections!
 :::
 
 :::
-
-## Let's talk about rocks
-
-```{r}
-#| echo: fenced
-#| eval: false
-print(rock)
-```
-
-
-```{r}
-#| echo: true
-#| code-fold: true
-#| code-summary: Look at me!
-summary(rock)
-```
-
-## And now about anxiety and other stuff
-```{r}
-data <- read.csv("data/dataset.csv")
-str(data)
-
-
-
-summary(data)
-```
-

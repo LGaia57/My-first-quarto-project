@@ -1,0 +1,90 @@
+---
+title: "L3-Quarto"
+author: "GL"
+date: today
+format: 
+  html:
+    self-contained: true
+    toc: true
+    toc-location: left
+    toc-title: My contents
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
+    theme: 
+      light: lumen
+      dark: quartz
+    fontsize: 20px
+    code-tools: 
+     source: true
+     toggle: false
+     caption: This is my code
+lang: en
+bibliography: references.bib
+citation-location: margin
+execute: 
+  echo: fenced
+  message: false
+  error: true
+code-fold: true
+code-summary: See this specific code
+---
+
+
+## Let's talk about rocks
+
+```{r}
+#| echo: fenced
+#| eval: false
+print(rock)
+```
+
+
+```{r}
+#| echo: true
+#| code-fold: true
+#| code-summary: Look at me!
+summary(rock)
+```
+
+## And now about anxiety and other stuff
+```{r}
+#| echo: false
+data <- read.csv("data/dataset.csv")
+str(data)
+```
+
+```{r}
+#| code-summary: Look at me!
+summary(data)
+```
+
+@fig-bb illustrates a baby wearing a nirs cap with frontal probes.
+```{r}
+#| out-width: 20%
+#| fig-align: left
+#| fig-cap: A baby with a nirs cap
+#| fig-cap-location: bottom
+#| label: fig-bb
+knitr::include_graphics("img/bb.png")
+```
+ 
+@fig-plot1 illustrates a plot
+
+```{r}
+library(ggplot2)
+#| out-width: 50%                                
+#| fig-align: center                             
+#| fig-cap: A graph from `mtcars`
+#| fig-cap-location: margin
+#| label: fig-plot1
+ggplot(mtcars, aes(hp, mpg, color = factor(am))) +
+  geom_point() +
+  geom_smooth(formula = y ~ x, method = "loess") +
+  theme(legend.position = 'bottom')
+```
+
+
+

@@ -1,0 +1,35 @@
+---
+title: "Sardinia Holidays"
+author: "GL"
+date: today
+format: 
+  html:
+    self-contained: true
+    toc: true
+    toc-location: left
+    toc-title: My contents
+    grid:
+      sidebar-width: 300px
+      body-width: 900px
+      margin-width: 300px
+      gutter-width: 1.5rem
+    theme: 
+      light: cerulean
+      dark: vapor
+    fontsize: 20px
+    code-tools: 
+     source: false
+     toggle: false
+     caption: This is my code
+lang: en
+bibliography: references.bib
+citation-location: margin
+execute: 
+  echo: fenced
+  message: false
+  error: true
+code-fold: true
+code-summary: See my code!
+---
+
+

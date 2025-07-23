@@ -8,3 +8,5 @@ format: html
 
 This is my first quarto doc for a web page
 And here you can find my first [HTML](L1-Quarto.html)
+
+Here there is [lesson 3](L3-Quarto.html) with some code and some figures
