@@ -1,5 +1,5 @@
 ---
-title: "Sardinia Holidays"
+title: "Sardinia Sailing Holidays"
 author: "GL"
 date: today
 format: 
@@ -7,7 +7,7 @@ format:
     self-contained: true
     toc: true
     toc-location: left
-    toc-title: My contents
+    toc-title: Main Contents
     grid:
       sidebar-width: 300px
       body-width: 900px
@@ -32,4 +32,15 @@ code-fold: true
 code-summary: See my code!
 ---
 
+Come with me to this marvelous adventure in Sardinia!
+
+![](img/boat1.png)
+
+## What to pack
+
+## What to expect
+
+## Itinerary
+
+## Excursions 
 

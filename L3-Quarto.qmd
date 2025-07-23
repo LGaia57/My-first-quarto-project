@@ -21,7 +21,7 @@ format:
      source: true
      toggle: false
      caption: This is my code
-lang: en
+lang: it
 bibliography: references.bib
 citation-location: margin
 execute: 
@@ -85,12 +85,34 @@ library(ggplot2)
 #| fig-cap: A graph from `mtcars`
 #| fig-cap-location: margin
 #| label: fig-plot1
-#| code-summary: look how we directly plotted in Quarto (of course I copied the code by Ottavia)
+#| code-summary: look how we directly plotted in Quarto (of course I copied Ottavia's code)
 ggplot(mtcars, aes(hp, mpg, color = factor(am))) +
   geom_point() +
   geom_smooth(formula = y ~ x, method = "loess") +
   theme(legend.position = 'bottom')
 ```
 
+```{r}
+#| include: false
+library(kableExtra)
+```
 
+@tbl-table1 show the summary of the ChickWeight dataset
+
+```{r}
+#| echo: false
+#| label: tbl-table1
+#| fig-cap-location: margin
+#| tbl-cap: "ChickWeight data summary"
+kable(summary(ChickWeight)) %>%
+  scroll_box(height = "200px", width = "100%")
+```
+```{r}
+#| lst-label: lst-tablecode
+#| lst-cap: Code use to generate the previous table
+#| eval: false
+
+kable(summary(ChickWeight)) %>%
+  scroll_box(height = "200px", width = "100%")
+```
 
