@@ -116,3 +116,7 @@ kable(summary(ChickWeight)) %>%
   scroll_box(height = "200px", width = "100%")
 ```
 
+::: {.callout-tip collapse="true"}
+
+If you write  *"#| eval: false"*  in the previous code ref, quarto won't return a table twice
+:::
