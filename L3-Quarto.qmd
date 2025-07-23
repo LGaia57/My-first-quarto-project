@@ -14,8 +14,8 @@ format:
       margin-width: 300px
       gutter-width: 1.5rem
     theme: 
-      light: lumen
-      dark: quartz
+      light: flatly
+      dark: darkly
     fontsize: 20px
     code-tools: 
      source: true
@@ -25,8 +25,9 @@ lang: en
 bibliography: references.bib
 citation-location: margin
 execute: 
-  echo: fenced
+  echo: true
   message: false
+  warning: false
   error: true
 code-fold: true
 code-summary: See this specific code
@@ -43,8 +44,6 @@ print(rock)
 
 
 ```{r}
-#| echo: true
-#| code-fold: true
 #| code-summary: Look at me!
 summary(rock)
 ```
@@ -68,6 +67,7 @@ summary(data)
 #| fig-cap: A baby with a nirs cap
 #| fig-cap-location: bottom
 #| label: fig-bb
+#| code-summary: look how I've imported this nice pic! ;)
 knitr::include_graphics("img/bb.png")
 ```
  
@@ -85,6 +85,7 @@ library(ggplot2)
 #| fig-cap: A graph from `mtcars`
 #| fig-cap-location: margin
 #| label: fig-plot1
+#| code-summary: look how we directly plotted in Quarto (of course I copied the code by Ottavia)
 ggplot(mtcars, aes(hp, mpg, color = factor(am))) +
   geom_point() +
   geom_smooth(formula = y ~ x, method = "loess") +
