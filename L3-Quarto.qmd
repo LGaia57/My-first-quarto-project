@@ -71,10 +71,15 @@ summary(data)
 knitr::include_graphics("img/bb.png")
 ```
  
+```{r}
+#| include: false
+library(ggplot2)
+```
+
+
 @fig-plot1 illustrates a plot
 
 ```{r}
-library(ggplot2)
 #| out-width: 50%                                
 #| fig-align: center                             
 #| fig-cap: A graph from `mtcars`
