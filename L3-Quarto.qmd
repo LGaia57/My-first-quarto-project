@@ -31,6 +31,7 @@ execute:
   error: true
 code-fold: true
 code-summary: See this specific code
+code-annotations: hover
 ---
 
 
@@ -120,3 +121,105 @@ kable(summary(ChickWeight)) %>%
 
 If you write  *"#| eval: false"*  in the previous code ref, quarto won't return a table twice
 :::
+
+```{r}
+#| echo: false
+data <- read.csv("data/dataset.csv")
+str(data)
+```
+
+```{r}
+#| echo: false
+#| label: tbl-table2
+#| fig-cap-location: bottom
+#| tbl-cap: "Data Summary"
+
+kable(summary(data))
+```
+
+```{r}
+ggplot(data, 
+       aes(anxiety, flexibility, color = factor(mindfulness))) +
+  geom_point() +
+  theme(legend.position = 'bottom')
+```
+
+```{r}
+#| eval: true
+#| fig-column: margin
+
+ggplot(data,
+       aes(anxiety, flexibility, color = factor(mindfulness))) + 
+  geom_point() + 
+  theme(legend.position = 'bottom') 
+kable(summary(data)) 
+```
+
+
+```{r}
+#| eval: true
+
+ggplot(data, # <1>
+       aes(anxiety, flexibility, color = factor(mindfulness))) + # <2>
+  geom_point() + # <3>
+  theme(legend.position = 'bottom') # <4>
+
+```
+1. specify the dataset
+2. specify variables
+3. select the type of point
+4. select the legend position
+
+
+
+@fig-plotsModels illustrates different things. @fig-plotsModels-1 and @fig-plotsModels-3 illustrates *Mindfulness* aggregation, @fig-plotsModels-2 and @fig-plotsModels-4 illustrates *Activity* aggregation 
+```{r}
+#| label: fig-plotsModels
+#| layout-nrow: 2
+#| layout-ncol: 2
+#| fig-align: center
+#| out-width: 100%
+#| fig-cap: "One dataset, different graphical representations" 
+#| fig-subcap:
+#|   - "Mindfulness a"
+#|   - "Activity a"
+#|   - "Mindfulness b"
+#|   - "Activity b" 
+
+ggplot(data, 
+       aes(anxiety, flexibility, color = factor(mindfulness))) +
+  geom_point()
+
+ggplot(data, 
+       aes(anxiety, flexibility, color = factor(activity))) +
+  geom_point()
+
+ggplot(data, 
+       aes(anxiety, flexibility, shape = factor(mindfulness))) +
+  geom_point()
+
+ggplot(data, 
+       aes(anxiety, flexibility, shape = factor(activity))) +
+  geom_point()
+
+```
+
+
+```{r}
+#| label: tbl-tables
+#| tbl-cap: "Datasets"
+#| tbl-subcap: 
+#|   - "Data"
+#|   - "DataSummary"
+#| layout-ncol: 2
+#| 
+
+kable(head(data))
+
+
+kable(summary(data))
+```
+
+
+The mean of the anxiety variable is `r mean(data$anxiety)`
+

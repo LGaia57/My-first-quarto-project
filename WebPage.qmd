@@ -37,6 +37,26 @@ Come with me to this marvelous adventure in Sardinia!
 ![](img/boat1.png)
 
 ## What to pack
+::: {.panel-tabset}
+## Sailing essentials
+  + k-way
+  + waterproof pants
+  + boat shoes
+  + head flashlight
+  + boat gloves
+  + sun hat
+  + sunglasses
+  
+## Summer essentials
+  + Swim-suit
+  + Goggles
+  + T-shirts
+  + Short pants
+  + Summer pj
+  + Flip-flops
+  + Beach towel
+  
+:::
 
 ## What to expect
 
@@ -44,3 +64,5 @@ Come with me to this marvelous adventure in Sardinia!
 
 ## Excursions 
 
+Fai una lista dei link usati
+Puoi usare un plot delle temperature previste per una settimana x // o dei km previsti per questo viaggio
