@@ -15,3 +15,5 @@ Here there is [lesson 3](L3-Quarto.html) with some code and some figures
 
 No lesson 2 to display ;)
 :::
+
+And lesson 4 is [a presentation!](L4-Quarto.html)
