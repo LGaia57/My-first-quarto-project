@@ -6,4 +6,20 @@ format: revealjs
 ---
 # Introduction
 
-## This is a slide
+## State of the art
+
+# Methods
+
+## Participants
+
+## Experimental paradigm
+
+# Results and discussion
+
+## Study group
+
+## Control group
+
+# Conclusion
+
+## Take home message
