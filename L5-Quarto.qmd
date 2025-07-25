@@ -1,0 +1,80 @@
+---
+title: "L5-Quarto"
+author: 
+  name: "Gaia Lucarini"
+date: 24 July 2025
+format: 
+  beamer: 
+    slide-level: 2
+    theme: Szeged
+    colortheme: dove
+code-annotations: below
+    
+---
+
+
+# Introduction
+
+## State of the art
+
+- Newborns are able to discriminate between their native language and an unfamiliar rhythmically different language (Mehler et al., 1988, Nazzi et al., 1998) <br> <br>
+
+. . . 
+
+- Newborns are able to discriminate between forward and backward speech (Peña et al., 2003) <br> <br>
+
+# Methods
+
+## We'll look at 
+
+:::: {.columns}
+::: {.column width="30%"}
+**Stimuli**
+:::
+::: {.column width="70%"}
+**Procedure**
+:::
+::::
+
+## Stimuli
+
+![](img/Spect.png){.fragment width="350" height="250"}
+
+## Procedure
+
+The experimental paradigm is shown in @fig-methods
+```{r}
+#| out-width: 70%
+#| fig-align: center
+#| label: fig-methods
+knitr::include_graphics("img/methods.png")
+```
+
+## Let's insert a table
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+
+```{r}
+#| label: tbl-mtcars1
+#| tbl-cap: "This is a table!"
+
+library(kableExtra)
+kable(mtcars[1:3,1:3], booktabs = TRUE) %>%
+kable_styling(latex_options = "hold_position")
+```
+
+## Code used 
+
+```{r}
+#| echo: true
+#| eval: false 
+
+library(kableExtra)
+kable(mtcars[1:3,1:3], booktabs = TRUE) %>%
+kable_styling(latex_options = "hold_position")
+```
+

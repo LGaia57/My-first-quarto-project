@@ -1,24 +1,138 @@
 ---
 title: "L4-Quarto"
-author: "GL"
+author: 
+  name: "Gaia Lucarini"
+  email: gaia.lucarini@phd.unipd.it
+affiliation: "University of Padova"
 date: 24 July 2025
-format: revealjs
+format: 
+  revealjs:
+    self-contained: true
+    incremental: false
+    scrollable: true
+    footer: "ARCA Presentation"
+    logo: "img/logo.png"
+    slide-number: c/t
+    show-slide-number: all
+    theme: [simple, custom.scss]
 ---
 # Introduction
 
-## State of the art
+## State of the art {footer=false}
+
+- Newborns are able to discriminate between their native language and an unfamiliar rhythmically different language (Mehler et al., 1988, Nazzi et al., 1998) <br> <br>
+
+
+- Newborns are able to discriminate between forward and backward speech (Peña et al., 2003) <br> <br>
+
+
+![](audio/ENGBwd1.wav)
+
+## State of the art {.smaller}
+
+::: {.fragment .highlight-red}
+- Newborns are able to discriminate between their native language and an unfamiliar rhythmically different language (Mehler et al., 1988, Nazzi et al., 1998)
+:::
+
+. . .
+
+- Newborns are able to discriminate between forward and backward speech (Peña et al., 2003)
+
+::: {.notes}
+Just read the slide!
+:::
+
 
 # Methods
 
-## Participants
+## Participants {.scrollable}
+
+:::{.r-stack}
+::: {.fragment .fade-out}
+![](img/bb3.png){width="300" height="370"}
+:::
+
+::: {.fragment .fade-in-then-out}
+![](img/bb2.png){width="220" height="370"}
+:::
+
+
+::: {.fragment .fade-in-then-out}
+![](img/bb.png){width="220" height="350"}
+:::
+:::
 
 ## Experimental paradigm
 
+:::{.r-stack}
+![](img/Paradigm.jpg){.fragment width="750" height="300"}
+![](img/Spect.png){.fragment width="350" height="250"}
+![](img/methods.png){.fragment width="450" height="350"}
+:::
+
+## "Data Analysis"
+
+```{r}
+#| include: false
+library(tidyverse)
+```
+
+
+```{r}
+#| echo: true
+#| eval: false
+#| code-line-numbers: "|2|3|"
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp)) +   
+  geom_point()
+```
+
+## "Data Analysis" {auto-animate="true"}
+
+```{r}
+#| echo: true
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, color = gear)) +   
+  geom_point()
+```
+
+## "Data Analysis" {auto-animate="true"}
+
+```{r}
+#| echo: true
+
+mtcars %>%                               
+  ggplot( aes(mpg, hp, color = gear)) +   
+  geom_point() + 
+  geom_smooth(method = "lm")
+```
+  
 # Results and discussion
+
+## Results
+
+::: {.panel-tabset}
 
 ## Study group
 
+This replicate May et al. 2018 ^[This study is [May et al. 2018](https://onlinelibrary.wiley.com/doi/10.1111/desc.12564)]
+
+
+
+
+
+::: aside
+Study
+
+[May et al. 2018](https://onlinelibrary.wiley.com/doi/10.1111/desc.12564)
+:::
+
+
 ## Control group
+
+:::
 
 # Conclusion
 
